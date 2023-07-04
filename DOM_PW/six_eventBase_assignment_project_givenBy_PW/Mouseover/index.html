@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="btns">
+        <div class="logo">MDN</div>
+        <button onmouseover="myFun(this, 'ref')">References</button>
+        <button onmouseover="myFun(this, 'gui')">Guides</button>
+        <button onmouseover="myFun(this, 'plus')">Plus</button>
+        <button>Blog</button>
+    </div>
+    <div class="content">
+        <div id="ref" class="ref">
+            <h3>HTML</h3>
+            <h3>CSS</h3>
+            <h3>javaScript</h3>
+            <h3>HTTP</h3>
+            <h3>Web APIs</h3>
+            <h3>Web Extensions</h3>
+        </div>
+        <div id="gui" class="gui">
+            <h3>Overview / MDN Learning Area</h3>
+            <h3>Accessibility</h3>
+        </div>
+        <div id="plus" class="plus">
+            <h3>Overview</h3>
+            <h3>Updates</h3>
+            <h3>Documentation</h3>
+            <h3>FAQ</h3>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

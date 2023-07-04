@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id -->
+    <div id="footer"> Hallo there i am footer <span>How are you</span></div>
+
+    <!-- for class  -->
+    <p class="main">I am main section for your website</p>
+
+
+    <ul>
+        <li class="tech">Home</li>
+        <li class="tech">About</li>
+        <li class="tech">Contact Us</li>
+    </ul>
+
+    <!-- internal javascript -->
+    <script>
+        let divTag = window.document.getElementById("footer");
+        // let divTag = window.document.getElementById("footer").innerText;
+        // console.log(divTag)
+
+        let pTag = document.getElementsByClassName("main");
+        // console.log(pTag) //print Array form not add innerHTML and innerText.
+
+        // if access only inside elemete content so..
+        // console.log(pTag[0].innerText)
+        pTag[0].innerHTML += '<span> HII </span>'
+        // console.log(pTag[0].innerText)
+        // console.log(pTag[0].innerHTML);
+
+
+        // for multiple classes
+        let liTags = document.getElementsByClassName('tech')
+        // console.log(liTags) //catch all elements in form of array.
+
+        // add if only access one element so
+        // console.log(liTags[0]);
+        // console.log(liTags[1].innerText)
+        // console.log(liTags[2].innerHTML)
+
+        // liTags[2].innerHTML = '<span> Welcome </span>';
+        // but added text by html file has deleted that's why solve this problem
+        liTags[2].innerHTML += '<span> Welcome </span>'; //here is not delete previous countent.
+
+        // console.log(liTags[2].innerHTML)
+        // console.log(liTags[2].innerText)
+
+
+
+        // addign attribut like class, id and title Attribute etc.
+
+        liTags[2].setAttribute('id', 'main_section2')
+        // and 
+        
+        divTag.setAttribute('title', 'Footer')
+        console.log(divTag)
+
+        
+    </script>
+</body>
+</html>

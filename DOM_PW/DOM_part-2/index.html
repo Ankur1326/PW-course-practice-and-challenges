@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 2</title>
+</head>
+<body>
+
+    <ul> 
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <div class="pInsideDiv">
+        <p>first</p>
+        <p>Second</p>
+    </div>
+    
+    <script>
+        // HOW to create element using JavaScript
+
+        // Append Child 
+        let title = document.createElement("h1");
+        title.className ="pwSkills"
+        title.style.fontSize = "25px"
+        title.textContent = "PW skills, Nameste"
+        // console.log(title);
+        document.body.appendChild(title);
+
+        // Remove child 
+        let ulElement = document.querySelector("ul")
+        // console.log(ulElement)
+        let lists = document.querySelectorAll("li");
+        // console.log(lists)
+        for(list of lists) {
+            ulElement.removeChild(list);
+        }
+
+
+        // Practice .................
+        // Create Elements 
+        let divElement = document.createElement("div");
+        // console.log(divElement)
+        divElement.className = "Lorem";
+        document.body.appendChild(divElement);
+        divElement.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, labore veniam corporis unde culpa inventore nulla porro, nisi laboriosam ducimus quos error. Eos cumque eaque veritatis aut ea porro dolorem?";
+        divElement.style.fontSize = "20px"
+        divElement.style.color = "Red";
+
+        // Remove Child
+
+    
+        // using class name 
+        let div = document.querySelector(".pInsideDiv")
+        console.log(div)
+        let pAll = document.querySelectorAll("div p")
+        console.log(pAll)
+        for(p of pAll) {
+            div.removeChild(p);
+        }
+        
+    </script>
+</body>
+</html>

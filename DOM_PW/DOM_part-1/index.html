@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- adding css style sheet external file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <!-- id -->
+    <p id="one"><span>Hello</span> Nameste</p>
+
+    <!-- class -->
+    <ul>
+        <li class="tech">One</li>
+        <li class="tech">Two</li>
+        <li class="tech">Three</li>
+    </ul>
+
+    <!-- tag Name -->
+    <h4>Hey</h4>
+    <h4>Nameste</h4>
+    <h4>Hola</h4>
+
+    <!-- querySelector -->
+    <h2>Hello</h2>
+    <h2 class="classes">Hola</h2>
+    <h2 id="ids">Hey</h2>
+    
+    <!-- inner javaScript -->
+    <script>
+        // for id......... 
+        let pTag = document.getElementById("one")
+        // console.log(pTag.innerText)
+
+        // for class......
+        let liTag = document.getElementsByClassName("tech")
+        // console.log(liTag) // print in Array form
+
+        // console.log(liTag[0].innerHTML)
+        // console.log(liTag[1].innerHTML)
+        // console.log(liTag[2].innerHTML)
+
+        // change.... 
+        
+        // console.log(liTag[1].innerHTML)
+        liTag[1].innerText = "Node.js"
+        // console.log(liTag[1].innerHTML)
+
+        // Tag Name.........
+        let h4Tag = document.getElementsByTagName("h4")
+        // console.log(h4Tag) // print the form of Array.
+
+        // console.log(h4Tag[0].innerText)
+        // console.log(h4Tag[1])
+        // console.log(h4Tag[2]) // Output is 
+
+        h4Tag[2].innerText = "Hello PWSkills";
+        h4Tag[2].style.color = "Red"; 
+
+        // query Selector
+        let var4 = document.querySelector(".classes")
+        // console.log(var4)
+        
+        let var5 = document.querySelector("#ids")
+        // console.log(var5)
+
+
+        // var4.className = "Hello";
+        // console.log(var4)
+
+        // Adding multiple class
+        var4.className = "container main-section Hell"
+        
+
+        // adding attribute in elements 
+        var4.setAttribute("id", "js")
+        var4.setAttribute("title", "Anurag")
+
+
+    </script>
+    <!-- external JavaScript -->
+    <script src="./script.js"></script>
+</html>

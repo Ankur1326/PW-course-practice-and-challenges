@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #444;
+    overflow: hidden;
+}
+
+.btns {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo {
+    color: white;
+    font-size: 2rem;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    background-color: #333;
+    color: rgb(242, 242, 242);
+}
+
+/* References */
+.ref, .gui, .plus {
+    display: none;
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+    top: 74px;
+    color: aliceblue;
+}
+.ref {
+    left: 80px;
+}
+.ref h3, .gui h3, .plus h3 {
+    padding: 10px;
+    margin: 10px 0px;
+}
+.ref h3:hover, .gui h3:hover, .plus h3:hover {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+.ref h3:nth-child(1){
+    border-left: 3px solid green;
+}
+.ref h3:nth-child(2){
+    border-left: 3px solid rgb(128, 0, 85);
+}
+.ref h3:nth-child(3){
+    border-left: 3px solid rgb(0, 126, 128);
+}
+.ref h3:nth-child(4){
+    border-left: 3px solid rgb(13, 128, 0);
+}
+.ref h3:nth-child(5){
+    border-left: 3px solid rgb(128, 124, 0);
+}
+.ref h3:nth-child(6){
+    border-left: 3px solid rgb(204, 222, 222);
+}
+
+/* Guides */
+.gui {
+    left: 225px;
+}
+.gui h3:nth-child(1){
+    border-left: 3px solid rgb(0, 6, 128);
+}
+.gui h3:nth-child(2){
+    border-left: 3px solid rgb(128, 0, 0);
+}
+
+/* Plus  */
+.plus {
+    left: 324px;
+}
+.plus h3:nth-child(1){
+    border-left: 3px solid rgb(0, 126, 128);
+}
+.plus h3:nth-child(2){
+    border-left: 3px solid rgb(128, 43, 0);
+}
+.plus h3:nth-child(3){
+    border-left: 3px solid rgb(245, 249, 10);
+}
+.plus h3:nth-child(4){
+    border-left: 3px solid rgb(41, 251, 255);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- adding css style sheets -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="btns">
+      <button class="home" id="default" onclick="myFun(this, 'red')">Home</button>
+      <button class="news" onclick="myFun(this, 'green')">News</button>
+      <button class="contact" onclick="myFun(this, 'yellow')">Contact</button>
+      <button class="about" onclick="myFun(this, 'blue')">About</button>
+    </div>
+    <div id="home" class="tab_content">
+      <h1>Home</h1>
+      <p>Home is where the heart is..</p>
+    </div>
+    <div id="news" class="tab_content">
+      <h1>News</h1>
+      <p>Some news this fine day!</p>
+    </div>
+    <div id="contact" class="tab_content">
+      <h1>Contact</h1>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+    <div id="about" class="tab_content">
+      <h1>About</h1>
+      <p>Who we are and what we do.</p>
+    </div>
+
+    <!-- adding javeScript-->
+    <script src="./script.js"></script>
+    
+  </body>
+</html>

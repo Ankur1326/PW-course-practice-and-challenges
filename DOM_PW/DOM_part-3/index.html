@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Bacho - PWSkills</h1>
+    <p id="js"></p>
+
+    <button onclick="LogInAndOut()">Login</button>
+    <script>
+        
+        // One click 
+        document.addEventListener("click", hello);
+        function hello() {
+            // document.getElementById("js").innerText = "Nameste Bacho";
+        }
+
+        // dbl click  
+        document.addEventListener("dblclick", SayHii)
+        
+        function SayHii() {
+            // document.getElementById("js").innerText = "Hii There!!!";
+        }
+        // mouse Enter 
+
+        document.addEventListener("mouseenter", welcome)
+        function welcome(){
+            // document.querySelector("body").style.backgroundColor = "darkcyan"
+        }
+
+        // mouse leave 
+        document.addEventListener("mouseleave", byby);
+
+        function byby() {
+            // document.querySelector("body").style.backgroundColor = "darkgoldenrod";
+        }
+
+
+        // created by me...........
+        let onetime = 0;
+        let btn = document.querySelector("button")
+        btn.style.boxSizing = "border-box";
+        btn.style.padding = "10px 25px"
+        btn.style.color = "white"
+        btn.style.borderRadius = "20px"
+        function LogInAndOut() {
+
+            let arr = new Array();
+            onetime += arr.push(btn);
+            console.log(onetime)
+            if(onetime % 2 == 1) {
+                btn.innerText = "Logout";
+                document.querySelector("body").style.backgroundColor = "darkgoldenrod";
+                btn.style.backgroundColor = "darkcyan";
+            }
+            else {
+                btn.innerText = "Login";
+                document.querySelector("body").style.backgroundColor = "darkcyan"
+                btn.style.backgroundColor = "darkgoldenrod"
+            }
+           
+        }
+    </script>
+</body>
+</html>

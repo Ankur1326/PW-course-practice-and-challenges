@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .log {
+            /* width: 80px; */
+            height: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <input placeholder="click here, then press any key" type="text">
+    <div class="log">
+
+    </div>
+    <script>
+        let input = document.querySelector('input')
+        console.log(input)
+        let log = document.querySelector('.log')
+        console.log(log)
+        document.addEventListener("keydown", function(e){
+                log.textContent +=  e.code;
+
+        })
+    </script>
+</body>
+
+</html>
