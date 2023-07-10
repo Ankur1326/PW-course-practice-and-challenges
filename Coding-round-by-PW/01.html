@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <style>
+        .square-box {
+            width: 300px;
+            height: 300px;
+            background-color: #ff0000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="square-box">
+
+    </div>
+
+    <script>
+        const box = document.querySelector(".square-box");
+        box.addEventListener("click", () => {
+            box.style.backgroundColor = 'yellow'
+            
+            const initialWidth = getComputedStyle(box).getPropertyValue('width').slice(0, -2)
+            const initialHeight = getComputedStyle(box).getPropertyValue('height').slice(0, -2)
+            
+
+            // change height and width of box element
+            box.style.width = (2 * initialWidth) + "px"
+            box.style.height = (2 * initialHeight) + "px"
+        })
+    </script>
+</body>
+</html>
