@@ -51,12 +51,12 @@ async function fetchDataAndDisplay() {
         titleElem.innerHTML = post.title;
         paraElem.innerHTML = post.body;
 
-        container.appendChild(titleElem)
-        container.appendChild(paraElem)
+        container.appendChild(titleElem) // Append the title to the element
+        container.appendChild(paraElem) //append the paraElem to the container
 
     });
 
 }
 
-window.addEventListener('DOMContentLoaded', fetchDataAndDisplay);
+window.addEventListener('DOMContentLoaded', fetchDataAndDisplay); //Fetch data and display it when the page loads
 setTimeout(removeSkeletonLoader, 2000); // Remove skeleton loader after 2 seconds
