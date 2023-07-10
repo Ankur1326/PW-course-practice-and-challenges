@@ -1,0 +1,5 @@
+Q.2 Explain Semantic tags in html? And why do we need it?
+
+Ans. HTML Semantic tags introduced in HTML%. It provides maning to each section of the webpage and improves readability for screen reader so that without seeing understand Humans. Semantic tags optimize the SEO for browers search.
+
+Here is some example of Semantic tag : <header>, <footer>, <nav>, <aside>, <main>, <article>
