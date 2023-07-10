@@ -1,0 +1,3 @@
+Q.1 <!DOCTYPE html> is it a tag of html? If not, what is it and why do we use it?
+
+Ans. <DOCTYPE html> is not an element or tag of HTML. This is a Document type declaration and informs the web browser about an HTML version. Basicly it is represent html5 version
